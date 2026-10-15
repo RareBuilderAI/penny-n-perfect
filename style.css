@@ -576,3 +576,13 @@ a {
         letter-spacing: -1px;
     }
 }
+
+/* NEW ARRIVAL VIDEOS */
+.arrival-gallery { margin-top: 90px; }
+.arrival-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px 24px; }
+.arrival-card { min-width: 0; }
+.arrival-card video { aspect-ratio: 9 / 16; }
+.arrival-card h3 { margin: 20px 0 14px; font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; font-weight: 400; }
+.arrival-card .order-button { min-height: 50px; font-size: 0.85rem; }
+@media (max-width: 850px) { .arrival-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 520px) { .arrival-gallery { margin-top: 65px; } .arrival-grid { grid-template-columns: 1fr; } }
